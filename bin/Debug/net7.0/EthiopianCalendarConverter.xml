@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EthiopianCalendarConverter</name>
+    </assembly>
+    <members>
+        <member name="T:EthiopianCalendarConverter.EthiopianCalendar">
+            <summary>
+            Represents an Ethiopian calendar and provides methods to convert and manipulate dates in Ethiopian and Gregorian calendars.
+            </summary>
+        </member>
+        <member name="M:EthiopianCalendarConverter.EthiopianCalendar.#ctor(System.DateTime)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EthiopianCalendarConverter.EthiopianCalendar"/> class with the specified date in the Gregorian calendar.
+            </summary>
+            <param name="date">The date in the Gregorian calendar.</param>
+        </member>
+        <member name="M:EthiopianCalendarConverter.EthiopianCalendar.Date(System.Globalization.CultureInfo)">
+            <summary>
+            Converts the Gregorian date to the Ethiopian date.
+            </summary>
+            <param name="culture">The culture info for formatting the date.</param>
+            <returns>The Ethiopian date in the format "yyyy-MM-dd".</returns>
+        </member>
+        <member name="M:EthiopianCalendarConverter.EthiopianCalendar.Year(System.Globalization.CultureInfo)">
+            <summary>
+            Gets the year of the Ethiopian date.
+            </summary>
+            <param name="culture">The culture info for formatting the date.</param>
+            <returns>The year of the Ethiopian date.</returns>
+        </member>
+        <member name="M:EthiopianCalendarConverter.EthiopianCalendar.Month(System.Globalization.CultureInfo)">
+            <summary>
+            Gets the month of the Ethiopian date.
+            </summary>
+            <param name="culture">The culture info for formatting the date.</param>
+            <returns>The month of the Ethiopian date.</returns>
+        </member>
+        <member name="M:EthiopianCalendarConverter.EthiopianCalendar.Quarter(System.Globalization.CultureInfo)">
+            <summary>
+            Gets the quarter of the Ethiopian date.
+            </summary>
+            <param name="culture">The culture info for formatting the date.</param>
+            <returns>The quarter of the Ethiopian date.</returns>
+        </member>
+        <member name="M:EthiopianCalendarConverter.EthiopianCalendar.QuarterName(System.Globalization.CultureInfo)">
+            <summary>
+            Gets the name of the quarter in the specified culture's language.
+            </summary>
+            <param name="culture">The culture info for formatting the name.</param>
+            <returns>The name of the quarter in the specified culture's language.</returns>
+        </member>
+        <member name="M:EthiopianCalendarConverter.EthiopianCalendar.MonthName(System.Globalization.CultureInfo)">
+            <summary>
+            Gets the name of the month in the specified culture's language.
+            </summary>
+            <param name="culture">The culture info for formatting the name.</param>
+            <returns>The name of the month in the specified culture's language.</returns>
+        </member>
+        <member name="M:EthiopianCalendarConverter.EthiopianCalendar.Day(System.Globalization.CultureInfo)">
+            <summary>
+            Gets the day of the Ethiopian date.
+            </summary>
+            <param name="culture">The culture info for formatting the date.</param>
+            <returns>The day of the Ethiopian date.</returns>
+        </member>
+        <member name="M:EthiopianCalendarConverter.EthiopianCalendar.Week(System.Globalization.CultureInfo)">
+            <summary>
+            Gets the week of the Ethiopian date.
+            </summary>
+            <param name="culture">The culture info for formatting the date.</param>
+            <returns>The week of the Ethiopian date.</returns>
+        </member>
+        <member name="M:EthiopianCalendarConverter.EthiopianCalendar.DayOfYear(System.Globalization.CultureInfo)">
+            <summary>
+            Gets the day of the year in the Ethiopian calendar.
+            </summary>
+            <param name="culture">The culture info for formatting the date.</param>
+            <returns>The day of the year in the Ethiopian calendar.</returns>
+        </member>
+        <member name="M:EthiopianCalendarConverter.EthiopianCalendar.WeekDay(System.Globalization.CultureInfo)">
+            <summary>
+            Gets the name of the weekday in the specified culture's language.
+            </summary>
+            <param name="culture">The culture info for formatting the name.</param>
+            <returns>The name of the weekday in the specified culture's language.</returns>
+        </member>
+        <member name="M:EthiopianCalendarConverter.EthiopianCalendar.FiscalYear(System.Globalization.CultureInfo)">
+            <summary>
+            Gets the fiscal year in the Ethiopian calendar.
+            </summary>
+            <param name="culture">The culture info for formatting the date.</param>
+            <returns>The fiscal year in the Ethiopian calendar.</returns>
+        </member>
+        <member name="M:EthiopianCalendarConverter.EthiopianCalendar.FiscalMonth(System.Globalization.CultureInfo)">
+            <summary>
+            Gets the fiscal month in the Ethiopian calendar.
+            </summary>
+            <param name="culture">The culture info for formatting the date.</param>
+            <returns>The fiscal month in the Ethiopian calendar.</returns>
+        </member>
+        <member name="M:EthiopianCalendarConverter.EthiopianCalendar.IsLeapYear(System.Globalization.CultureInfo)">
+            <summary>
+            Checks if the specified year is a leap year in the Ethiopian calendar.
+            </summary>
+            <param name="culture">The culture info to use for leap year calculation.</param>
+            <returns>True if the specified year is a leap year; otherwise, false.</returns>
+        </member>
+    </members>
+</doc>
