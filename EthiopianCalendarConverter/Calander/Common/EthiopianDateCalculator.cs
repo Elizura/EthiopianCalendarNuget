@@ -340,7 +340,10 @@ namespace Calander.Common
                 }
             }
 
-            return $"{EthiopianYear}-{EthiopianMonth}-{EthiopianDay}";
+            var Month = EthiopianMonth < 10 ? $"0{EthiopianMonth}" : $"{EthiopianMonth}";
+            var Day = EthiopianDay < 10 ? $"0{EthiopianDay}" : $"{EthiopianDay}";
+
+            return $"{EthiopianYear}-{Month}-{Day}";
         }
     }
 }

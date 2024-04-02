@@ -167,7 +167,7 @@ public class EthiopianCalendar
             return CultureInfo.CurrentCulture.Calendar.GetWeekOfYear(_date, CalendarWeekRule.FirstFullWeek, DayOfWeek.Monday);
         }
         var EthiopianDate = EthiopianDateCalculator.GetDay(Month(culture), Day(culture));
-        return (int)Math.Ceiling((EthiopianDate / 7.0));
+        return (int)Math.Ceiling(EthiopianDate / 7.0);
 
 
     }
