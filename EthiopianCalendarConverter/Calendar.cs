@@ -23,13 +23,14 @@ public class EthiopianCalendar
     /// Converts the Gregorian date to the Ethiopian date.
     /// </summary>
     /// <param name="culture">The culture info for formatting the date.</param>
+    /// <param name="format">The format of the Ethiopian date.</param>
     /// <returns>The Ethiopian date in the format "yyyy-MM-dd".</returns>
 
-    public string Date(CultureInfo? culture = null)
+    public string Date(CultureInfo? culture = null, string format = "yyyy-MM-dd")
     {
         if (culture != null && culture.Name == Language.English)
         {
-            return _date.ToString("yyyy-MM-dd");
+            return _date.ToString(format);
         }
         var EthiopianDateTranslation = EthiopianDateCalculator.ToEthiopian(_date);
         return EthiopianDateTranslation;
@@ -272,5 +273,7 @@ public class EthiopianCalendar
         }
         return Year() % 4 == 3;
     }
+
+
 
 }
