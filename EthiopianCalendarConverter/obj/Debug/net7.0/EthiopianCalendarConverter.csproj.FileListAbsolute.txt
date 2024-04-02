@@ -12,3 +12,16 @@
 /home/elizur/github/EthiopianCalendarConverter/obj/Debug/net7.0/EthiopianCalendarConverter.xml
 /home/elizur/github/EthiopianCalendarConverter/obj/Debug/net7.0/EthiopianCalendarConverter.pdb
 /home/elizur/github/EthiopianCalendarConverter/obj/Debug/net7.0/ref/EthiopianCalendarConverter.dll
+/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/bin/Debug/net7.0/EthiopianCalendarConverter.deps.json
+/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/bin/Debug/net7.0/EthiopianCalendarConverter.dll
+/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/bin/Debug/net7.0/EthiopianCalendarConverter.pdb
+/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/bin/Debug/net7.0/EthiopianCalendarConverter.xml
+/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/obj/Debug/net7.0/EthiopianCalendarConverter.GeneratedMSBuildEditorConfig.editorconfig
+/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/obj/Debug/net7.0/EthiopianCalendarConverter.AssemblyInfoInputs.cache
+/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/obj/Debug/net7.0/EthiopianCalendarConverter.AssemblyInfo.cs
+/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/obj/Debug/net7.0/EthiopianCalendarConverter.csproj.CoreCompileInputs.cache
+/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/obj/Debug/net7.0/EthiopianCalendarConverter.dll
+/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/obj/Debug/net7.0/refint/EthiopianCalendarConverter.dll
+/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/obj/Debug/net7.0/EthiopianCalendarConverter.xml
+/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/obj/Debug/net7.0/EthiopianCalendarConverter.pdb
+/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/obj/Debug/net7.0/ref/EthiopianCalendarConverter.dll
