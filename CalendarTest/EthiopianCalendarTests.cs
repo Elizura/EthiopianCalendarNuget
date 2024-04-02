@@ -6,7 +6,7 @@ using EthiopianCalendarConverter;
 namespace CalendarTest;
 
 [TestClass]
-public class EthiopianCalendarTests
+public class EthiopianCalendarConversionTest
 {
     [TestMethod]
     // Correctly converts Gregorian date to Ethiopian date
@@ -109,8 +109,7 @@ public class EthiopianCalendarTests
         Assert.AreEqual("ሩብ ዓመት 3", quarterName);
 
     }
-    // Console.WriteLine($"The day of the week is {ethiopianCalendar.Week()}");
-    // Console.WriteLine($"The day of the week is {ethiopianCalendar.WeekDay()}");
+
     [TestMethod]
     // Correctly identifies the day of the week
     public void TestWeek()
@@ -126,5 +125,52 @@ public class EthiopianCalendarTests
         // Assert
         Assert.AreEqual(30, week);
         Assert.AreEqual("ማክሰኞ", weekDay);
+    }
+}
+
+[TestClass]
+public class EthiopianCalendarLocalizationTest
+{
+
+    [TestMethod]
+    // Correctly identifies the month name in the given localization
+    public void TestMonthNameas()
+    {
+        // Arrange
+        DateTime gregorianDate = new DateTime(2024, 4, 2);
+        EthiopianCalendarConverter.EthiopianCalendar ethiopianCalendar = new EthiopianCalendarConverter.EthiopianCalendar(gregorianDate);
+
+        // Act
+        string tigrayMonthName = ethiopianCalendar.MonthName(culture: new CultureInfo("tg-ET"));
+        string affanOromoMonthName = ethiopianCalendar.MonthName(culture: new CultureInfo("om-ET"));
+        string somaliMonthName = ethiopianCalendar.MonthName(culture: new CultureInfo("sm-ET"));
+        string sidamaMonthName = ethiopianCalendar.MonthName(culture: new CultureInfo("sd-ET"));
+
+        // Assert
+        Assert.AreEqual("Bitoottessa", affanOromoMonthName);
+        Assert.AreEqual("መጋቢት", tigrayMonthName);
+        // Issue with somali month name and the calendar usage
+        Assert.AreEqual("Maarso", somaliMonthName);
+        Assert.AreEqual("Badheessa", sidamaMonthName);
+    }
+    [TestMethod]
+    // Correctly identifies the name of day of the week in the given localization
+    public void TestWeekNames()
+    {
+        // Arrange
+        DateTime gregorianDate = new DateTime(2024, 4, 2);
+        EthiopianCalendarConverter.EthiopianCalendar ethiopianCalendar = new EthiopianCalendarConverter.EthiopianCalendar(gregorianDate);
+
+        // Act        
+        string sidamaDayName = ethiopianCalendar.WeekDay(culture: new CultureInfo("sd-ET"));
+        string somaliDayName = ethiopianCalendar.WeekDay(culture: new CultureInfo("sm-ET"));
+        string tigrayDayName = ethiopianCalendar.WeekDay(culture: new CultureInfo("tg-ET"));
+        string affanOromoDayName = ethiopianCalendar.WeekDay(culture: new CultureInfo("om-ET"));
+
+
+        // Assert        
+        Assert.AreEqual("Kibxata", affanOromoDayName);
+        Assert.AreEqual("ሶሉስ", tigrayDayName);
+        Assert.AreEqual("Qawaado", sidamaDayName);
     }
 }
