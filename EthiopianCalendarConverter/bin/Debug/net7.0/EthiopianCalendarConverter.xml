@@ -15,11 +15,12 @@
             </summary>
             <param name="date">The date in the Gregorian calendar.</param>
         </member>
-        <member name="M:EthiopianCalendarConverter.EthiopianCalendar.Date(System.Globalization.CultureInfo)">
+        <member name="M:EthiopianCalendarConverter.EthiopianCalendar.Date(System.Globalization.CultureInfo,System.String)">
             <summary>
             Converts the Gregorian date to the Ethiopian date.
             </summary>
             <param name="culture">The culture info for formatting the date.</param>
+            <param name="format">The format of the Ethiopian date.</param>
             <returns>The Ethiopian date in the format "yyyy-MM-dd".</returns>
         </member>
         <member name="M:EthiopianCalendarConverter.EthiopianCalendar.Year(System.Globalization.CultureInfo)">
