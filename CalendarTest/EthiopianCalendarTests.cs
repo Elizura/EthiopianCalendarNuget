@@ -19,9 +19,8 @@ public class EthiopianCalendarConversionTest
         // Act
         string ethiopianDate = ethiopianCalendar.Date();
 
-        // Assert
-        // TODO - it should be 2016-07-23
-        Assert.AreEqual("2016-7-24", ethiopianDate);
+        // Assert        
+        Assert.AreEqual("2016-07-24", ethiopianDate);
     }
     [TestMethod]
     // Correctly show the current Year Month and Day
