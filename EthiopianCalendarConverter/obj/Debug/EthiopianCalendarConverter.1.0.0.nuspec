@@ -14,8 +14,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="/home/elizur/github/EthiopianCalendarConverter/bin/Debug/net7.0/EthiopianCalendarConverter.dll" target="lib/net7.0/EthiopianCalendarConverter.dll" />
-    <file src="/home/elizur/github/EthiopianCalendarConverter/bin/Debug/net7.0/EthiopianCalendarConverter.xml" target="lib/net7.0/EthiopianCalendarConverter.xml" />
-    <file src="/home/elizur/github/EthiopianCalendarConverter/README.md" target="/README.md" />
+    <file src="/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/bin/Debug/net7.0/EthiopianCalendarConverter.dll" target="lib/net7.0/EthiopianCalendarConverter.dll" />
+    <file src="/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/bin/Debug/net7.0/EthiopianCalendarConverter.xml" target="lib/net7.0/EthiopianCalendarConverter.xml" />
+    <file src="/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/README.md" target="/README.md" />
   </files>
 </package>
