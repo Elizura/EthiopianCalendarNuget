@@ -3,7 +3,7 @@
   <PropertyGroup>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageId>EthiopianCalendarConverter</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.2.0</Version>
     <Authors>Elisur Freyesus</Authors>
     <Description>Converts Gregorian to Ethiopian Calendar and gives Ethiopian translation for day and month names</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>

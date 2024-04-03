@@ -11,7 +11,7 @@
     "/home/elizur/.nuget/packages/": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.2.0",
     "restore": {
       "projectUniqueName": "/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/EthiopianCalendarConverter.csproj",
       "projectName": "EthiopianCalendarConverter",
@@ -26,6 +26,7 @@
         "net7.0"
       ],
       "sources": {
+        "/home/elizur/github/EthiopianCalendarConverterSolution/EthiopianCalendarConverter/bin/Debug": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
