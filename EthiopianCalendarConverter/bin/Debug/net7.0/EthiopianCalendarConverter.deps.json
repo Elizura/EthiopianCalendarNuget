@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "EthiopianCalendarConverter/1.2.0": {
+      "EthiopianCalendarConverter/1.2.1": {
         "runtime": {
           "EthiopianCalendarConverter.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "EthiopianCalendarConverter/1.2.0": {
+    "EthiopianCalendarConverter/1.2.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
