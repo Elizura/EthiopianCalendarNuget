@@ -32,8 +32,9 @@ public class EthiopianCalendar
         {
             return _date.ToString(format);
         }
-        var EthiopianDateTranslation = EthiopianDateCalculator.ToEthiopian(_date);
-        return EthiopianDateTranslation;
+        var EthiopianDateTranslation = EthiopianDateCalculator.ToEthiopian(_date);                
+        var FormattedDate = EthiopianDateCalculator.FormatDate(EthiopianDateTranslation, format, MonthName(culture), WeekDay(culture));
+        return FormattedDate;
 
     }
     /// <summary>

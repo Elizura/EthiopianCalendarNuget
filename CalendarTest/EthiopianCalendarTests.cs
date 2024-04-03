@@ -133,7 +133,7 @@ public class EthiopianCalendarLocalizationTest
 
     [TestMethod]
     // Correctly identifies the month name in the given localization
-    public void TestMonthNameas()
+    public void TestMonthNames()
     {
         // Arrange
         DateTime gregorianDate = new DateTime(2024, 4, 2);
@@ -171,5 +171,33 @@ public class EthiopianCalendarLocalizationTest
         Assert.AreEqual("Kibxata", affanOromoDayName);
         Assert.AreEqual("ሶሉስ", tigrayDayName);
         Assert.AreEqual("Qawaado", sidamaDayName);
+    }
+}
+
+
+
+[TestClass]
+public class EthiopianCalendarFormatTest
+{
+
+    [TestMethod]
+    // Return the date in the given format
+    public void TestDateFormats()
+    {
+        // Arrange
+        DateTime gregorianDate = new DateTime(2024, 4, 2);
+        EthiopianCalendarConverter.EthiopianCalendar ethiopianCalendar = new EthiopianCalendarConverter.EthiopianCalendar(gregorianDate);
+
+        // Act
+        string ethiopianDate = ethiopianCalendar.Date(format: "MM/dd/yyyy");
+        string ethiopianDate1 = ethiopianCalendar.Date(format: "dd/MM/yyyy");
+        string ethiopianDate2 = ethiopianCalendar.Date(format: "yyyy/MM/dd");
+        string ethiopianDate3 = ethiopianCalendar.Date(format: "dddd, dd MMMM yyyy");
+
+        // Assert        
+        Assert.AreEqual("07/24/2016", ethiopianDate);
+        Assert.AreEqual("24/07/2016", ethiopianDate1);
+        Assert.AreEqual("2016/07/24", ethiopianDate2);
+        Assert.AreEqual("ማክሰኞ, መጋቢት 24 2016", ethiopianDate3);
     }
 }

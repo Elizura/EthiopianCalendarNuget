@@ -345,5 +345,36 @@ namespace Calander.Common
 
             return $"{EthiopianYear}-{Month}-{Day}";
         }
+        public static string FormatDate(string date, string format, string monthName, string dayName)
+        {
+            var dateParts = date.Split('-');
+            var year = dateParts[0];
+            var month = dateParts[1];
+            var day = dateParts[2];
+            if (format == "MM/dd/yyyy")
+            {
+                return $"{month}/{day}/{year}";
+            }
+            else if (format == "dd/MM/yyyy")
+            {
+                return $"{day}/{month}/{year}";
+            }
+            else if (format == "yyyy/MM/dd")
+            {
+                return $"{year}/{month}/{day}";
+            }
+            else if (format == "dddd, dd MMMM yyyy")
+            {
+                return $"{dayName}, {monthName} {day} {year}";
+            }
+            else if (format == "yyyy-MM-dd")
+            {
+                return $"{year}-{month}-{day}";
+            }
+            else
+            {
+                throw new ArgumentOutOfRangeException("Invalid format. Please enter a valid format");
+            }
+        }
     }
 }
