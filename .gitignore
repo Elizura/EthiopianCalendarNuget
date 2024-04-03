@@ -2,6 +2,7 @@
 # .NET Core build folders
 bin/
 obj/
+TestResults/
 
 # Common node modules locations
 /node_modules
@@ -40,6 +41,3 @@ obj/
 # Ignore all local history of files
 .history
 .ionide
-
-### personal ###
-Class1.cs
