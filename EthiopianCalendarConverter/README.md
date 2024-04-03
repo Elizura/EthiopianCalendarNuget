@@ -55,6 +55,18 @@ int fiscalYear = ethiopianCalendar.FiscalYear(); // Output: 2014
 int fiscalMonth = ethiopianCalendar.FiscalMonth(); // Output: 10
 ```
 
+
+### Date Formatting
+
+V1.2.0 and above also support for date formatting
+
+```csharp
+DateTime gregorianDate = new DateTime(2024, 4, 2);
+EthiopianCalendar ethiopianCalendar = new EthiopianCalendar(gregorianDate);
+string ethiopianDate = ethiopianCalendar.Date(format: "dddd, dd MMMM yyyy");
+Console.WriteLine(ethiopianDate); //ሀሙስ, መጋቢት 26 2016
+```
+
 ## License
 
 This project is licensed under the MIT License.
